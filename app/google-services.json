@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "263537427047",
+    "firebase_url": "https://status-downloder-a549d.firebaseio.com",
+    "project_id": "status-downloder-a549d",
+    "storage_bucket": "status-downloder-a549d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:263537427047:android:7c56e5b85c31bffeb2cac2",
+        "android_client_info": {
+          "package_name": "com.whatsapp.status.downloader.video.story.saver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "263537427047-osvtvdg9m8h36cqkr0td9b9nbui2kij9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTNmej-1Xq0V4ZcSyw_6OdhTvBDryo0IA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "263537427047-osvtvdg9m8h36cqkr0td9b9nbui2kij9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

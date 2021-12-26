@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/bg"
+android:background="@android:color/transparent"
+tools:context="com.whatsapp.status.downloader.video.story.saver.Frags.Direct_messaagetpx">
+
+
+
+
+
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_alignParentTop="true"
+    android:padding="1dp"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/transparent"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    android:id="@+id/des_Schedule"
+    app:lottie_rawRes="@raw/free" />
+<androidx.cardview.widget.CardView
+    android:layout_below="@+id/des_Schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:id="@+id/c1q"
+    android:elevation="15dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="30dp"
+    android:background="@android:color/transparent"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginBottom="30dp"  >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center|top"
+        android:background="@android:color/transparent"
+        >
+
+
+        <TextView
+            android:paddingHorizontal="3dp"
+            android:maxLines="5"
+android:textColorHint="@color/darkmodeblack"
+
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="50dp"
+            android:id="@+id/fromEDTV"
+            android:layout_marginHorizontal="3dp"
+            android:hint="Ads Free experience in jus 1$\n100% secure by play protect\n coming soon"
+android:background="@drawable/cardbg0"
+              android:textSize="14sp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_below="@+id/half"
+            android:id="@+id/buy"
+            android:visibility="visible"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/cardbg0"
+            android:text="@string/buy_now"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" />
+
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_below="@+id/buy"
+                android:layout_marginTop="10dp"
+                 android:background="@drawable/cardbg2"
+                android:id="@+id/Micframe"
+                android:layout_centerHorizontal="true"
+                android:layout_width="150dp"
+                 android:layout_height="150dp"
+
+                android:padding="1dp"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+
+                app:lottie_rawRes="@raw/prt" />
+
+        <View
+            android:layout_below="@+id/fromEDTV"
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            app:lottie_colorFilter="@color/greendefault"
+            android:layout_height="1dp"
+            app:lottie_autoPlay="true"
+            android:layout_below="@+id/space"
+            app:lottie_loop="true"
+            android:id="@+id/half"
+            app:lottie_rawRes="@raw/devider" />
+
+        <View
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/half"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

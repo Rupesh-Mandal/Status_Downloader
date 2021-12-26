@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+
+    android:id="@+id/bottomSheet"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="80dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+
+
+
+    <ScrollView
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="35dp"
+        android:background="@drawable/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+         app:behavior_hideable="true"
+        app:behavior_peekHeight="50dp"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+<RelativeLayout
+
+    android:layout_width="match_parent"
+    android:paddingTop="30dp"
+    android:background="@android:color/transparent"
+    android:layout_height="wrap_content" >
+    <LinearLayout
+        android:layout_marginHorizontal="30dp"
+        android:layout_alignParentTop="true"
+        android:weightSum="1"
+        android:visibility="gone"
+        android:id="@+id/eror"
+
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:background="@android:color/transparent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/error"
+            app:tint="@color/greendefault"
+            android:contentDescription="@string/wa_pictures"
+            tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".7"
+
+            android:layout_height="30dp"
+            android:textColor="@color/red"
+            android:gravity="center"
+            android:text="@string/not_installed"/>
+    </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+android:visibility="gone"
+                android:layout_below="@+id/eror"
+                app:cardBackgroundColor="@android:color/white"
+        android:id="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="15dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="10sp">
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RadioButton
+        android:background="@android:color/transparent"
+        android:gravity="left|top"
+        tools:ignore="RtlHardcoded"
+        android:id="@+id/WAR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/WA"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+
+            <LinearLayout
+                android:layout_margin="7dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/pc" />
+
+
+                <TextView
+                    android:fontFamily="@font/bitter_bold"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:gravity="center"
+                    android:text="@string/wa"
+
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+android:id="@+id/c14"
+
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="7dp"
+                android:layout_marginVertical="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+
+                android:orientation="vertical"
+                 >
+
+                <ImageView
+                    android:id="@+id/WAP"
+
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_image_24"
+                    android:background="@android:color/transparent"
+
+                    android:contentDescription="@string/wa_pictures"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+
+                    android:id="@+id/WAPT"
+                    android:fontFamily="@font/bitter_bold"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"  
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:textStyle="bold"
+                    android:text="@string/pictures"
+                    android:gravity="center"/>
+            </LinearLayout></androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="@android:color/white"
+
+                android:id="@+id/c15"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="7dp"
+                android:layout_marginVertical="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+
+                android:orientation="vertical"
+                >
+
+                <ImageView
+
+                    android:id="@+id/WAV"
+
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_baseline_video_library_24"
+                    android:background="@android:color/transparent"
+
+                    android:contentDescription="@string/wa_videos"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/WAVT"
+                    android:fontFamily="@font/bitter_bold"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+ 
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:textStyle="bold"
+                    android:text="@string/wa_videos"
+                    android:gravity="center"/>
+            </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="@android:color/white"
+
+                android:id="@+id/c16"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="7dp"
+                android:layout_marginVertical="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/WAS"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/classic_view_24"
+                        android:background="@android:color/transparent"
+
+                        android:contentDescription="ALL"
+                        tools:ignore="NestedWeights"
+                       />
+
+                <TextView
+                    android:id="@+id/WAST"
+                    android:fontFamily="@font/bitter_bold"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="ALL"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+</FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                android:visibility="gone"
+                app:cardBackgroundColor="@android:color/white"
+        android:id="@+id/two"
+        android:layout_below="@+id/one"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="10sp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <RadioButton
+                android:background="@android:color/transparent"
+                android:gravity="left|top"
+                tools:ignore="RtlHardcoded"
+                android:id="@+id/BWAR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+
+            android:id="@+id/BWA"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_margin="7dp"
+                android:weightSum="1">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/pc" />
+
+                <TextView
+                    android:fontFamily="@font/bitter_bold"
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/B_wa"
+                    android:gravity="center"/>
+            </LinearLayout>
+            <androidx.cardview.widget.CardView
+
+
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_width="0dp"
+                android:id="@+id/c17"
+
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginVertical="7dp"
+                android:layout_margin="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/BWAP"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_image_24"
+                        android:background="@android:color/transparent"
+
+                        android:contentDescription="@string/wa_pictures"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/BWAPT"
+                    android:fontFamily="@font/bitter_bold"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="@string/pictures"
+                        android:gravity="center"/>
+                </LinearLayout></androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="@android:color/white"
+
+                android:id="@+id/c18"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginVertical="7dp"
+                android:layout_margin="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:id="@+id/BWAV"
+
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_video_library_24"
+                        android:background="@android:color/transparent"
+
+                        android:contentDescription="@string/wa_videos"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/BWAVT"
+                    android:fontFamily="@font/bitter_bold"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="@string/wa_videos"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="@android:color/white"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/c19"
+                android:layout_margin="7dp"
+                android:layout_marginVertical="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/BWAS"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/classic_view_24"
+                        android:background="@android:color/transparent"
+
+                        android:contentDescription="ALL"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/BWAST"
+                    android:fontFamily="@font/bitter_bold"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="ALL"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+            </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+
+                android:visibility="gone"
+                app:cardBackgroundColor="@android:color/white"
+        android:id="@+id/three"
+        android:layout_below="@+id/two"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:elevation="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        app:cardCornerRadius="10sp">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <RadioButton
+                    android:id="@+id/GBWAR"
+                    android:background="@android:color/transparent"
+                    android:gravity="left|top"
+                    tools:ignore="RtlHardcoded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_margin="7dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/pc" />
+
+                <TextView
+                    android:fontFamily="@font/bitter_bold"
+                      
+
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/GB_wa"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <androidx.cardview.widget.CardView
+
+                android:id="@+id/c20"
+
+                app:cardBackgroundColor="@android:color/white"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="7dp"
+                android:layout_marginVertical="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/GBWAP"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_image_24"
+                        android:background="@android:color/transparent"
+                         
+                        android:contentDescription="@string/wa_pictures"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+
+                    android:id="@+id/GBWAPT"
+                    android:fontFamily="@font/bitter_bold"
+                          
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="@string/pictures"
+                        android:gravity="center"/>
+                </LinearLayout></androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="@android:color/white"
+
+                android:id="@+id/c21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="7dp"
+                android:layout_marginVertical="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:id="@+id/GBWAV"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_baseline_video_library_24"
+                        android:background="@android:color/transparent"
+                         
+                        android:contentDescription="@string/wa_videos"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/GBWAVT"
+                    android:fontFamily="@font/bitter_bold"
+                          
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="@string/wa_videos"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="@android:color/white"
+
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="7dp"
+                android:id="@+id/c22"
+                android:layout_marginVertical="7dp"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <ImageView
+                        android:id="@+id/GBWAS"
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/classic_view_24"
+                        android:background="@android:color/transparent"
+                         
+                        android:contentDescription="@string/wa_videos"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/GBWAST"
+                    android:fontFamily="@font/bitter_bold"
+                          
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="ALL"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+                </FrameLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <View
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/three"
+        android:layout_width="match_parent"
+        android:id="@+id/three1"
+        android:background="@android:color/white"
+        android:layout_height="1dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        app:lottie_colorFilter="@android:color/white"
+        android:layout_height="1dp"
+        app:lottie_autoPlay="true"
+
+        android:layout_below="@+id/three1"
+        app:lottie_loop="true"
+        android:id="@+id/half"
+        app:lottie_rawRes="@raw/devider" />
+
+    <View
+        android:background="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/half"
+        android:layout_width="match_parent"
+        android:id="@+id/four"
+        android:layout_height="1dp"/>
+        <LinearLayout
+            android:id="@+id/five"
+            android:layout_below="@+id/four"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <androidx.cardview.widget.CardView
+
+                app:cardBackgroundColor="@android:color/white"
+
+                android:layout_margin="7dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/c10"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="visible"
+                        android:id="@+id/dell"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+                        android:background="@android:color/transparent"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/msg"
+                         
+                        android:contentDescription="@string/wa_pictures"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:onClick="onClick"
+                    android:id="@+id/dellg"
+                    android:fontFamily="@font/bitter_bold"
+                          
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                        android:text="@string/backup"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <androidx.cardview.widget.CardView
+
+                android:layout_margin="7dp"
+                app:cardBackgroundColor="@android:color/white"
+
+                android:layout_width="0dp"
+                android:id="@+id/c11"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:elevation="7dp"    >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:weightSum="1"
+
+                    android:orientation="vertical"
+                    >
+
+                    <com.airbnb.lottie.LottieAnimationView
+
+                        android:onClick="onClick"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight=".7"
+                        android:id="@+id/smsg"
+                        android:background="@android:color/transparent"
+                        app:lottie_autoPlay="true"
+                        app:lottie_loop="true"
+                        app:lottie_rawRes="@raw/smsg"
+                         
+                        android:contentDescription="@string/wa_pictures"
+                        tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:onClick="onClick"
+                    android:fontFamily="@font/bitter_bold"
+                          
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                        android:textStyle="bold"
+                    android:id="@+id/sms"
+                        android:text="@string/send"
+                        android:gravity="center"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+        </LinearLayout>
+
+
+    <View
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/five"
+        android:id="@+id/five1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        app:lottie_colorFilter="@android:color/white"
+        android:layout_height="1dp"
+        app:lottie_autoPlay="true"
+        android:layout_below="@+id/five1"
+        app:lottie_loop="true"
+        android:id="@+id/half2"
+        app:lottie_rawRes="@raw/devider" />
+
+    <View
+        android:background="@android:color/white"
+        android:layout_below="@+id/half2"
+        android:layout_width="match_parent"
+        android:id="@+id/six"
+        android:layout_height="1dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/seven"
+        android:layout_below="@+id/six"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <androidx.cardview.widget.CardView
+
+            app:cardBackgroundColor="@android:color/white"
+
+            android:layout_margin="7dp"
+            android:id="@+id/c13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:elevation="7dp"    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+
+                android:orientation="vertical"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    android:id="@+id/thmc"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/thm"
+                     
+                    android:contentDescription="@string/wa_pictures"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:fontFamily="@font/bitter_bold"
+                      
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:textStyle="bold"
+                    android:id="@+id/thmt"
+                    android:text="@string/themes"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/c4"
+            android:orientation="vertical"
+            android:elevation="7dp"    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+
+                android:orientation="vertical"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                   android:id="@+id/pur"
+                    app:lottie_rawRes="@raw/premiumthemes"
+                     
+
+                    android:contentDescription="@string/wa_pictures"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+
+                    android:id="@+id/purt"
+                    android:fontFamily="@font/bitter_bold"
+                      
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:textStyle="bold"
+                    android:text="@string/paid_version"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+    <View
+        android:background="@android:color/white"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/seven"
+        android:id="@+id/eight1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        app:lottie_colorFilter="@android:color/white"
+        android:layout_height="1dp"
+        app:lottie_autoPlay="true"
+        android:layout_below="@+id/eight1"
+        app:lottie_loop="true"
+        android:id="@+id/half3"
+        app:lottie_rawRes="@raw/devider" />
+
+    <View
+        android:background="@android:color/white"
+        android:layout_below="@+id/half3"
+        android:layout_width="match_parent"
+        android:id="@+id/eight2"
+        android:layout_height="1dp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/nine"
+        android:layout_below="@+id/eight2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="35dp"
+        android:weightSum="2">
+
+
+        <androidx.cardview.widget.CardView
+
+            app:cardBackgroundColor="@android:color/white"
+
+            android:layout_margin="7dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/c5"
+            android:orientation="vertical"
+            android:elevation="7dp"    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+
+                android:orientation="vertical"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    android:id="@+id/sharel"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/share"
+                     
+                    android:contentDescription="@string/wa_pictures"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:fontFamily="@font/bitter_bold"
+                      
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:textStyle="bold"
+                    android:id="@+id/share"
+                    android:text="@string/share"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+android:id="@+id/c6"
+            android:layout_margin="7dp"
+            app:cardBackgroundColor="@android:color/white"
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:elevation="7dp"    >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+
+                android:orientation="vertical"
+                >
+
+                <com.airbnb.lottie.LottieAnimationView
+
+                    android:onClick="onClick"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="visible"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".7"
+                    android:background="@android:color/transparent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    android:id="@+id/rate"
+                    app:lottie_rawRes="@raw/rate"
+                     
+
+                    android:contentDescription="@string/wa_pictures"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+
+                    android:id="@+id/ratel"
+                    android:fontFamily="@font/bitter_bold"
+                      
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight=".3"
+                    app:autoSizeTextType="uniform"
+                    app:autoSizeMinTextSize="7sp"
+                    app:autoSizeMaxTextSize="15sp"
+                    app:autoSizeStepGranularity="2sp"
+                    android:textStyle="bold"
+                    android:text="@string/rate_us"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+</ScrollView>
+
+    <View
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/c1"
+        android:layout_gravity="top"
+        android:background="@drawable/curvx"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/c2"
+        android:rotation="180"
+        android:background="@drawable/curvx"/>
+    <com.airbnb.lottie.LottieAnimationView
+
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+
+
+        android:layout_gravity="center_horizontal"
+        android:background="@android:color/transparent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/pull"
+        app:lottie_rawRes="@raw/arw" />
+</FrameLayout>

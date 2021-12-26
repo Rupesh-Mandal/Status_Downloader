@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+ <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/bg"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ImageView
+            android:background="@drawable/cardbg2"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:tint="@android:color/black"
+
+            android:id="@+id/back"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_baseline_clear_24"/>
+        <TextView
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:id="@+id/title"
+            android:background="@android:color/transparent"
+
+            android:text="Switch to apply theme"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_below="@+id/title"
+            android:padding="1dp"
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@android:color/transparent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:id="@+id/des_Schedule"
+            android:layout_marginBottom="20dp"
+            app:lottie_rawRes="@raw/thm" />
+    <ScrollView
+         android:layout_below="@+id/des_Schedule"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_alignParentTop="true"
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+
+            android:id="@+id/orange"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+
+                android:background="@android:color/transparent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:text="Orange Mode"
+
+
+                    android:background="@android:color/transparent"
+                    android:textColor="@android:color/holo_orange_dark"
+                    android:layout_weight=".7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+android:background="@android:color/transparent"
+                    android:layout_marginHorizontal="25dp"
+                    android:weightSum="3"
+                    android:layout_weight=".1">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_orange_dark"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_orange_light"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/lightblk"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+<Switch
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:id="@+id/default_mode"
+    android:layout_height="match_parent"
+    android:showText="false"
+    android:text="@string/apply"
+    android:textColor="@android:color/black"
+    />
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/orange"
+            android:layout_marginTop="5dp"
+            android:id="@+id/gren"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:background="@android:color/transparent"
+            android:weightSum="3">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:background="@android:color/transparent"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:text="Green Mode"
+                    android:textColor="@android:color/holo_green_light"
+                    android:layout_weight=".7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+                    android:background="@android:color/transparent"
+
+                    android:layout_marginHorizontal="25dp"
+                    android:weightSum="3"
+                    android:layout_weight=".1">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_green_dark"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_green_light"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_green_dark"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <Switch
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/green_mode"
+                android:layout_height="match_parent"
+                android:showText="false"
+                android:text="@string/apply"
+                android:textColor="@android:color/black"
+                />
+
+
+        </LinearLayout>
+
+
+
+    //
+    <LinearLayout
+        android:layout_below="@+id/gren"
+        android:layout_marginTop="5dp"
+        android:id="@+id/wht"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="White Mode"
+                android:textColor="@android:color/black"
+                android:layout_weight=".7"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+
+                android:layout_marginHorizontal="25dp"
+                android:weightSum="3"
+                android:layout_weight=".1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/darker_gray"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/offwhite"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Switch
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/white_mode"
+            android:layout_height="match_parent"
+            android:showText="false"
+            android:text="@string/apply"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/wht"
+        android:layout_height="50dp"
+        android:background="@android:color/white"
+        android:id="@+id/vie"
+        android:weightSum="1">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_below="@+id/title"
+            android:padding="1dp"
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/premiumthemes" />
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:text="Premium Themes"
+            android:fontFamily="@font/suranna"
+
+            android:textColor="@color/black"
+            android:layout_height="match_parent" />
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_below="@+id/title"
+            android:padding="1dp"
+            android:clickable="true"
+            android:visibility="visible"
+            android:layout_width="0dp"
+            android:layout_weight=".3"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/premiumthemes" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@+id/vie"
+            android:id="@+id/purp"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+  >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="Sharp purple"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_weight=".7"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+
+                    android:background="@android:color/transparent"
+                    android:layout_marginHorizontal="25dp"
+                    android:weightSum="3"
+                    android:layout_weight=".1">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimary"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/colorPrimaryDark"/>
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/purplelite"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <Switch
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/purple_mode"
+                android:layout_height="match_parent"
+                android:showText="false"
+                android:text="@string/apply"
+                android:textColor="@android:color/black"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_below="@+id/purp"
+            android:id="@+id/red"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+       >
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="Bright red"
+                    android:textColor="@android:color/holo_red_light"
+                    android:layout_weight=".7"/>
+                <LinearLayout
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+
+                    android:layout_marginHorizontal="25dp"
+                    android:weightSum="3"
+                    android:layout_weight=".1">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_red_dark"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_red_light"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/redish"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <Switch
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/red_mode"
+                android:layout_height="match_parent"
+                android:showText="false"
+                android:text="@string/apply"
+                android:textColor="@android:color/black"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_below="@id/red"
+            android:background="@android:color/transparent"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/yelo"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:weightSum="1"
+                android:background="@android:color/transparent"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:background="@android:color/transparent"
+                    android:text="yellow madness"
+                    android:textColor="@color/yellow"
+                    android:layout_weight=".7"/>
+                <LinearLayout
+                    android:background="@android:color/transparent"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:orientation="horizontal"
+
+                    android:layout_marginHorizontal="25dp"
+                    android:weightSum="3"
+                    android:layout_weight=".1">
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@color/yellow"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_orange_light"/>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/holo_blue_dark"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <Switch
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/yellow_mode"
+                android:layout_height="match_parent"
+                android:showText="false"
+                android:text="@string/apply"
+                android:textColor="@android:color/black"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_below="@+id/yelo"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:id="@+id/dark"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="Dark Mode"
+
+                android:background="@android:color/transparent"
+                android:textColor="@android:color/black"
+                android:layout_weight=".7"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                android:layout_marginHorizontal="25dp"
+                android:weightSum="3"
+                android:layout_weight=".1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/clay"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightblk"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Switch
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/dark_mode"
+            android:layout_height="match_parent"
+            android:showText="false"
+            android:text="@string/apply"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/dark"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:id="@+id/sky"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="Sky blue"
+
+
+                android:background="@android:color/transparent"
+                android:textColor="@color/skybluecolor"
+                android:layout_weight=".7"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                android:layout_marginHorizontal="25dp"
+                android:weightSum="3"
+                android:layout_weight=".1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/holo_blue_bright"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/skybluecolor"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/lightblk"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Switch
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/sky_mode"
+            android:layout_height="match_parent"
+            android:showText="false"
+            android:text="@string/apply"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/sky"
+
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+
+        android:id="@+id/coffe"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+
+         >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2"
+
+            android:background="@android:color/transparent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:text="Coffee"
+
+
+                android:background="@android:color/transparent"
+                android:textColor="@color/coffecolor"
+                android:layout_weight=".7"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:background="@android:color/transparent"
+                android:layout_marginHorizontal="25dp"
+                android:weightSum="3"
+                android:layout_weight=".1">
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"/>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/coffecolor"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:background="@color/coffecolor"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <Switch
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/coffe_mode"
+            android:layout_height="match_parent"
+            android:showText="false"
+            android:text="@string/apply"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

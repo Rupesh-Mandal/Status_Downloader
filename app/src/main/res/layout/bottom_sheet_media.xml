@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+
+    android:id="@+id/bottomSheet_media"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    <com.airbnb.lottie.LottieAnimationView
+android:background="@android:color/transparent"
+        android:visibility="visible"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:layout_gravity="center_horizontal"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:id="@+id/pull"
+        app:lottie_rawRes="@raw/arw" />
+
+
+
+        <LinearLayout
+            android:layout_marginTop="45dp"
+android:background="@drawable/curvx"
+            android:id="@+id/c1"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            android:weightSum="6.5"
+
+            android:layout_height="65dp">
+            <View
+                android:background="@android:color/transparent"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:id="@+id/fab3s"
+                android:layout_weight=".5"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="0dp"
+
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:fabCustomSize="50dp"
+
+                android:src="@drawable/ic_baseline_mobile_screen_share_24"
+                android:id="@+id/fab3"
+
+
+                android:contentDescription="@string/todo"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="50dp"   android:background="@android:color/transparent"
+
+                android:layout_weight=".5"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                app:fabCustomSize="50dp"
+                 android:src="@drawable/ic_baseline_send_24"
+                android:id="@+id/fab2"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:layout_width="0dp"   android:background="@android:color/transparent"
+
+                android:layout_height="50dp"
+                android:layout_weight=".5"/>
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_arrow_circle_down_24"
+                android:id="@+id/fab1"
+                app:fabCustomSize="50dp"
+
+
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:id="@+id/fab4a"
+                android:layout_width="0dp"
+                android:background="@android:color/transparent"
+
+                android:visibility="gone"
+                android:layout_height="50dp"
+                android:layout_weight=".5"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="0dp"
+                  android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_delete_forever_24"
+                android:id="@+id/fab4"
+                app:fabCustomSize="50dp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded" />
+
+            <View
+                android:background="@android:color/transparent"
+
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight=".5"/>
+
+        </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lytimg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@android:color/transparent"
+      >
+
+
+
+
+
+
+    <LinearLayout
+
+        android:id="@+id/multilioptlyt"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:background="@android:color/transparent"
+        android:padding="5dp"
+        android:weightSum="6.5"
+
+
+        android:layout_height="65dp">
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/cancel"
+
+            android:layout_gravity="left|top"
+            android:src="@drawable/ic_baseline_cancel_24"/>
+           <View
+            android:background="@android:color/transparent"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:id="@+id/fab3s"
+            android:layout_weight=".5"/>
+
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"   android:background="@android:color/transparent"
+
+            android:layout_weight=".5"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="50dp"
+            android:src="@drawable/ic_baseline_send_24"
+            android:id="@+id/fab2"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:layout_width="0dp"   android:background="@android:color/transparent"
+
+            android:layout_height="50dp"
+            android:layout_weight=".5"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_arrow_circle_down_24"
+            android:id="@+id/fab1"
+            app:fabCustomSize="50dp"
+
+
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:id="@+id/fab4a"
+            android:layout_width="0dp"
+            android:background="@android:color/transparent"
+
+            android:visibility="gone"
+            android:layout_height="50dp"
+            android:layout_weight=".5"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:id="@+id/fab4"
+            app:fabCustomSize="50dp"
+            android:visibility="gone"
+            tools:ignore="RtlHardcoded" />
+
+        <View
+            android:background="@android:color/transparent"
+
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".5"/>
+
+    </LinearLayout>
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/multilioptlyt"
+            android:background="@android:color/transparent"
+            android:id="@+id/swipeRecyclerView"
+            >
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:background="@android:color/transparent"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:paddingVertical="5dp"
+                android:id="@+id/recycle"
+                />
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+</RelativeLayout>
+
+
+
+
+
+

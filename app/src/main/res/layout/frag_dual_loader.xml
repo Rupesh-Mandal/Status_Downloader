@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/bg"
+    android:background="@android:color/transparent">
+
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/stab"
+            android:layout_marginVertical="5dp"
+            android:background="@drawable/cardbg2"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="30dp"
+            android:layout_gravity="center"
+            android:layout_height="40dp"
+            app:tabIndicatorFullWidth="false"
+            app:tabTextColor="@color/black"
+            app:tabIndicatorColor="@color/black"
+
+            app:tabMode="fixed" />
+
+
+<androidx.viewpager.widget.ViewPager
+
+
+            android:id="@+id/viewpager"
+            android:layout_below="@+id/stab"
+android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@android:color/transparent" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@android:color/black"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+    >
+
+
+
+
+    <VideoView
+        android:id="@+id/video"
+
+        android:background="@android:color/transparent"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+android:layout_gravity="center"
+
+        android:clickable="true"
+        android:src="@drawable/ic_baseline_clear_24"
+        app:tint="@color/black"
+        android:focusable="true"
+        tools:ignore="RtlHardcoded"
+        android:contentDescription="@string/todo" />
+
+    <ImageView
+        android:id="@+id/play"
+        android:clickable="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_play_circle_outline_24"
+        android:focusable="true"
+        app:tint="@color/clay" />
+</FrameLayout>
+
+

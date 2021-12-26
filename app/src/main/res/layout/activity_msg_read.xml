@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:padding="1dp"
+        android:visibility="visible"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@android:color/transparent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/msg" />
+    <ImageView
+        android:background="@drawable/cardbg2"
+
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/back"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/ic_baseline_clear_24"/>
+
+
+    <ImageView
+        android:background="@android:color/transparent"
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:id="@+id/dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="3dp" />
+    <TextView
+        android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:layout_below="@+id/dp"
+        android:gravity="center|bottom"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:text="Name"
+        android:id="@+id/name"
+        android:textSize="14sp"/>
+
+
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:layout_below="@+id/name"
+    android:id="@+id/swipeRecyclerViewmsg"
+
+    android:background="@android:color/transparent"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+>            <androidx.recyclerview.widget.RecyclerView
+    android:background="@drawable/curvx"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    android:paddingTop="17dp"
+
+    android:id="@+id/recycle"
+                />
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</RelativeLayout>
+
+
+

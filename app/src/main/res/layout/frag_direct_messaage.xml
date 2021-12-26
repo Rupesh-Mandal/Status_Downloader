@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/bg">
+
+<RelativeLayout
+    android:minHeight="700dp"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="@android:color/transparent"
+tools:context="com.whatsapp.status.downloader.video.story.saver.Frags.Direct_messaagetpx">
+
+
+
+
+
+<com.airbnb.lottie.LottieAnimationView
+    android:layout_alignParentTop="true"
+    android:padding="1dp"
+    android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@android:color/transparent"
+    app:lottie_autoPlay="true"
+    app:lottie_loop="true"
+    android:id="@+id/des_Schedule"
+    app:lottie_rawRes="@raw/smsg" />
+<androidx.cardview.widget.CardView
+    android:layout_below="@+id/des_Schedule"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+android:id="@+id/c1"
+    android:minHeight="500dp"
+    android:elevation="15dp"
+    app:cardBackgroundColor="@android:color/white"
+    app:cardCornerRadius="30dp"
+    android:background="@android:color/transparent"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginBottom="30dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@android:color/transparent"
+        >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:text="@string/direct_chat_without_saving_number"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:layout_alignParentTop="true"
+    android:id="@+id/title"
+    app:autoSizeTextType="uniform"
+    app:autoSizeMinTextSize="7sp"
+    app:autoSizeMaxTextSize="15sp"
+    app:autoSizeStepGranularity="2sp"/>
+
+        <com.hbb20.CountryCodePicker
+            android:layout_below="@+id/title"
+            android:id="@+id/ccp"
+            android:layout_width="100dp"
+            android:gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:layout_height="50dp"
+            app:ccp_showFullName="false"
+            app:ccp_showPhoneCode="true"
+            app:ccp_showNameCode="false"/>
+
+        <EditText
+
+            android:layout_below="@+id/title"
+            android:maxLength="16"
+
+            android:hint="@string/_91_012345678910"
+            android:maxLines="1"
+            android:textColorHint="@color/darkmodeblack"
+             android:spinnerMode="dropdown"
+            android:popupBackground="@android:color/transparent"
+            android:id="@+id/num"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/ccp"
+            android:inputType="phone" />
+
+        <EditText
+            android:paddingHorizontal="3dp"
+            android:maxLines="5"
+            android:textColorHint="@color/darkmodeblack"
+            android:layout_marginTop="30dp"
+
+android:inputType="text"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@+id/num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fromEDTV"
+            android:layout_marginHorizontal="3dp"
+            android:minHeight="120dp"
+android:background="@drawable/cardbg0"
+            android:hint="@string/hey_start_typing_form_here"
+            android:textSize="14sp"
+            android:gravity="center"/>
+
+        <Button
+            android:layout_below="@+id/half"
+            android:id="@+id/send"
+            android:visibility="visible"
+            android:layout_width="140dp"
+            android:padding="3dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizeMinTextSize="7sp"
+            app:autoSizeMaxTextSize="15sp"
+            app:autoSizeStepGranularity="2sp"
+            android:background="@drawable/cardbg0"
+            android:text="@string/send"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" />
+
+
+
+        <FrameLayout
+            android:id="@+id/Micframe"
+            android:layout_below="@+id/half"
+            android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="45dp"
+            android:clickable="true"
+            android:background="@drawable/cardbg2"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            android:layout_alignParentStart="true"
+            android:focusable="true">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/MIC"
+                android:layout_width="match_parent"
+                android:layout_height="29dp"
+                android:layout_margin="10dp"
+                android:background="@android:color/transparent"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="1dp"
+                android:visibility="visible"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="false"
+                app:lottie_rawRes="@raw/microphone" />
+
+        </FrameLayout>
+
+        <View
+            android:layout_below="@+id/fromEDTV"
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_centerInParent="true"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            app:lottie_colorFilter="@color/greendefault"
+            android:layout_height="1dp"
+            app:lottie_autoPlay="true"
+            android:layout_below="@+id/space"
+            app:lottie_loop="true"
+            android:id="@+id/half"
+            app:lottie_rawRes="@raw/devider" />
+
+        <View
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/half"
+            android:layout_width="match_parent"
+            android:background="@color/black"
+            android:layout_height="1dp"/>
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_marginBottom="1dp"
+            android:background="@android:color/transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="3dp"
+            android:layout_below="@+id/Micframe"
+            android:textStyle="bold"
+            android:text="@string/voice_language"
+            android:id="@+id/title5"
+
+            android:gravity="left|center_vertical"
+            android:layout_marginLeft="20dp"
+            tools:ignore="RtlHardcoded" />
+
+        <Spinner
+            android:layout_below="@+id/send"
+             android:spinnerMode="dropdown"
+             android:id="@+id/spinner"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@id/title5"
+            android:layout_marginEnd="20dp" />
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
+</ScrollView>

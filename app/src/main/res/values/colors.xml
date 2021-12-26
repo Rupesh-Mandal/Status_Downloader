@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="lightblk">#696969</color>
+    <color name="lightblk2">#3C696969</color>
+    <color name="purplelite">#BB86FC</color>
+
+    <color name="yellow">#FFDB03</color>
+    <color name="redish">#C59692</color>
+
+    <color name="red">#EC0000</color>
+    <color name="darkmodeblack">#121212</color>
+
+    <color name="primary">#2c2d32</color>
+    <color name="primary_dark">#2c2d32</color>
+    <color name="orange_app">#FF8903</color>
+
+    <color name="clay">#D3D3D3</color>
+    <!-- dots active colors -->
+    <color name="shadow">#20000000</color>
+
+    <color name="blue"> #002868</color>
+    <color name="greendefault">#075E54</color>
+    <color name="defaultwhite">#E3E3E3</color>
+    <color name="black">#000000</color>
+    <color name="brown">#A52A2A</color>
+    <color name="coffecolor">#6f4e37</color>
+    <color name="skybluecolor">#87ceeb</color>
+    <color name="offwhite">#FDFDFD</color>
+
+</resources>

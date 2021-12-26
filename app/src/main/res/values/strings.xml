@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Status Downloader</string>
+    <string name="wa">WA</string>
+    <string name="B_wa">Business WA</string>
+    <string name="pictures">Photos</string>
+    <string name="wa_pictures">Wa pictures</string>
+    <string name="wa_videos">videos</string>
+    <string name="GB_wa">GB WA</string>
+    <string name="backup">Backup Messages</string>
+    <string name="send">Send Message!</string>
+    <string name="saved">Old view</string>
+
+    <string name="ADDIS">ca-app-pub-3940256099942544/1033173712</string>;
+<!--    <string name="ADDIS">  ca-app-pub-5965558568567826/7929951597</string>;-->
+
+    <string name="themes">Themes</string>
+    <string name="paid_version">Premium (Ads free)</string>
+    <string name="not_installed">No relative app installed</string>
+    <string name="hey_start_typing_form_here">Hey! start typing form here........</string>
+    <string name="sendxz">Send !</string>
+    <string name="from">From :</string>
+    <string name="voice_language">Voice Language: </string>
+    <string name="message">Message</string>
+    <string name="todo">TODO</string>
+    <string name="buy_now">Buy now !</string>
+    <string name="name">NAME</string>
+    <string name="_21_08_2020_12_07_am">21/08/2020 12:07 AM</string>
+    <string name="share">Share app</string>
+    <string name="rate_us">Rate Us!</string>
+    <string name="_91_012345678910">32xxxxxxxx</string>
+    <string name="direct_chat_without_saving_number">Direct Chat Without Saving Number</string>
+    <string name="apply">  Apply </string>
+
+</resources>

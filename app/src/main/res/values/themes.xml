@@ -1,0 +1,299 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <style name="DrawerArrowStyleDARK" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/white</item>
+    </style>
+    <style name="LightRed" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/holo_red_light</item>
+
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@android:color/holo_red_light</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@android:color/holo_red_light</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@android:color/holo_red_light</item>
+        <item name="colorPrimaryDark">@android:color/holo_red_dark</item>
+        <item name="colorAccent">@color/redish</item>
+        <item name="android:windowBackground">@android:color/holo_red_light</item>
+        <item name="itemBackground">@color/defaultwhite</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyleDARK</item>
+        <item name="itemIconTint">@android:color/black</item>
+        <item name="colorControlHighlight">@android:color/holo_red_dark</item>
+        <item name="cardBackgroundColor">@android:color/holo_red_light</item>
+        <item name="tabIndicatorHeight">3dp</item>
+
+        <item name="tabSelectedTextColor">@android:color/holo_red_dark</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="tabPaddingBottom">2dp</item>
+<!--        <item name="android:ambientShadowAlpha">1</item>-->
+<!--        <item name="android:spotShadowAlpha">1</item>-->
+    </style>
+    // rose theme
+    <style name="DrawerArrowStylelight" parent="@style/Widget.AppCompat.DrawerArrowToggle">
+        <item name="spinBars">true</item>
+        <item name="color">@android:color/holo_red_dark</item>
+    </style>
+
+    //green theme
+
+    <style name="Green" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/greendefault</item>
+
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/greendefault</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/greendefault</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/greendefault</item>
+        <item name="colorPrimaryDark">@color/greendefault</item>
+        <item name="colorAccent">@android:color/holo_green_dark</item>
+        <item name="android:windowBackground">@color/greendefault</item>
+
+        <item name="cardBackgroundColor">@color/greendefault</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyleDARK</item>
+        <item name="itemIconTint">@android:color/black</item>
+
+        <item name="android:textColor">@android:color/black</item>
+
+
+        <item name="tabSelectedTextColor">@android:color/holo_green_dark</item>
+        <item name="tabPaddingBottom">2dp</item>
+        <item name="android:ambientShadowAlpha">1</item>
+        <item name="android:spotShadowAlpha">1</item>
+
+    </style>
+
+
+
+    // def orange
+
+    <style name="Default" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/orange_app</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/orange_app</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/orange_app</item>
+
+        <item name="tabSelectedTextColor">@android:color/holo_orange_dark</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/orange_app</item>
+        <item name="colorPrimaryDark">@color/orange_app</item>
+        <item name="colorAccent">@android:color/holo_orange_light</item>
+<!--        <item name="android:ambientShadowAlpha">1</item>-->
+<!--        <item name="android:spotShadowAlpha">1</item>-->
+
+
+
+
+
+    </style>
+
+    //purple theme
+
+
+    <style name="PurpleMode" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/colorPrimaryDark</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/colorPrimaryDark</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/colorPrimaryDark</item>
+
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/purplelite</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="itemBackground">@color/defaultwhite</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyleDARK</item>
+        <item name="itemIconTint">@android:color/black</item>
+        <item name="colorControlHighlight">@color/purplelite</item>
+
+        <item name="tabSelectedTextColor">@android:color/holo_purple</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="tabPaddingBottom">2dp</item>
+<!--        <item name="android:ambientShadowAlpha">1</item>-->
+<!--        <item name="android:spotShadowAlpha">1</item>-->
+    </style>
+
+
+
+    //yellow
+    <style name="yelloMode" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/yellow</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/yellow</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/yellow</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/yellow</item>
+        <item name="colorAccent">@android:color/holo_blue_dark</item>
+        <item name="android:windowBackground">@color/yellow</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyleDARK</item>
+        <item name="itemIconTint">@android:color/holo_blue_dark</item>
+
+        <item name="tabSelectedTextColor">@android:color/holo_blue_dark</item>
+        <item name="tabTextColor">@android:color/black</item>
+        <item name="tabIndicatorColor">@android:color/holo_blue_dark</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabRippleColor">@android:color/holo_blue_dark</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="tabPaddingBottom">2dp</item>
+<!--        <item name="android:ambientShadowAlpha">1</item>-->
+<!--        <item name="android:spotShadowAlpha">1</item>-->
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <style name="DarkMode" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="android:statusBarColor" tools:targetApi="l">@android:color/white</item>
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@android:color/white</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@android:color/white</item>
+
+
+        <item name="colorPrimary">@color/lightblk</item>
+        <item name="colorPrimaryDark">@color/lightblk</item>
+        <item name="colorAccent">@color/lightblk</item>
+
+        <item name="android:textColor">@android:color/white</item>
+
+        <item name="hintTextColor">@color/clay</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="tabSelectedTextColor">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+
+
+
+
+
+
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textColor">@android:color/white</item>
+<item name="tabSelectedTextColor">@color/clay</item>
+        <item name="tabIndicatorHeight">3dp</item>
+        <item name="tabPaddingBottom">2dp</item>
+        <item name="tabIndicatorColor">@android:color/white</item>
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">normal</item>
+        <item name="tabBackground">@drawable/cardbg1</item>
+    </style>
+
+//sky
+
+    <style name="Sky" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/skybluecolor</item>
+
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/skybluecolor</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/skybluecolor</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/skybluecolor</item>
+        <item name="colorPrimaryDark">@color/skybluecolor</item>
+        <item name="colorAccent">@color/skybluecolor</item>
+        <item name="android:windowBackground">@color/skybluecolor</item>
+
+        <item name="cardBackgroundColor">@color/skybluecolor</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyleDARK</item>
+        <item name="itemIconTint">@android:color/black</item>
+
+        <item name="android:textColor">@android:color/black</item>
+
+
+        <item name="tabSelectedTextColor">@color/skybluecolor</item>
+        <item name="tabPaddingBottom">2dp</item>
+<!--        <item name="android:ambientShadowAlpha">1</item>-->
+<!--        <item name="android:spotShadowAlpha">1</item>-->
+
+    </style>
+
+
+    // coffe
+
+    <style name="coffe" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/coffecolor</item>
+
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/coffecolor</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/coffecolor</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/coffecolor</item>
+        <item name="colorPrimaryDark">@color/coffecolor</item>
+        <item name="colorAccent">@color/coffecolor</item>
+        <item name="android:windowBackground">@color/coffecolor</item>
+
+        <item name="cardBackgroundColor">@color/coffecolor</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyleDARK</item>
+        <item name="itemIconTint">@android:color/black</item>
+
+        <item name="android:textColor">@android:color/black</item>
+
+
+        <item name="tabSelectedTextColor">@color/coffecolor</item>
+        <item name="tabPaddingBottom">2dp</item>
+        <item name="android:ambientShadowAlpha">1</item>
+        <item name="android:spotShadowAlpha">1</item>
+
+    </style>
+
+
+    <style name="whitex" parent="Theme.AppCompat.Light.NoActionBar">
+
+
+
+
+
+        <item name="android:statusBarColor" tools:targetApi="l">@color/clay</item>
+
+        <item name="android:outlineSpotShadowColor" tools:targetApi="p">@color/clay</item>
+        <item name="android:outlineAmbientShadowColor" tools:targetApi="p">@color/clay</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/offwhite</item>
+        <item name="colorPrimaryDark">@color/clay</item>
+        <item name="colorAccent">@color/offwhite</item>
+        <item name="android:windowBackground">@color/offwhite</item>
+
+        <item name="cardBackgroundColor">@color/offwhite</item>
+
+        <item name="drawerArrowStyle">@style/DrawerArrowStyleDARK</item>
+        <item name="itemIconTint">@color/clay</item>
+
+        <item name="android:textColor">@android:color/black</item>
+
+
+        <item name="tabSelectedTextColor">@color/coffecolor</item>
+        <item name="tabPaddingBottom">2dp</item>
+<!--        <item name="android:ambientShadowAlpha">1</item>-->
+<!--        <item name="android:spotShadowAlpha">1</item>-->
+
+    </style>
+</resources>

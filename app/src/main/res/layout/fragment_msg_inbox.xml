@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+        android:id="@+id/bg"
+        >
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+
+android:id="@+id/swipeRecyclerViewmsg">
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:paddingTop="40dp"
+    android:paddingBottom="13dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@android:color/transparent"
+
+    android:id="@+id/RecyclerViewmsg"/>
+
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+<ImageView
+    android:layout_width="40dp"
+    android:layout_height="40dp"
+    android:layout_gravity="right"
+    android:id="@+id/help"
+    android:clickable="true"
+        android:src="@drawable/ic_baseline_help_24"
+    android:focusable="true" />
+</FrameLayout>
